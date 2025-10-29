@@ -422,10 +422,9 @@ div:where(.swal2-icon).swal2-error {
 }
 
 .answer button.correct {
-  border: 2px solid #fff;
-
+  border: 2px solid var(--baileys-chocolate);
   background-color: rgb(91, 245, 158, 0) !important;
-  color: #fff;
+  color: var(--baileys-chocolate);
 }
 
 .answer button.wrong {
