@@ -267,7 +267,7 @@ div:where(.swal2-icon).swal2-error {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/image/interactive_two.jpg");
+  background-image: url("/image/interactive-screen.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: center;

@@ -120,7 +120,7 @@ const LoginPage = () => {
           <span className='animate__animated  animate__fadeInLeftBig'>
             Find Your
           </span>
-          <span className='animate__animated  animate__fadeInRight'>
+          <span className='animate__animated  animate__fadeInRight' style={{color: "#000"}}>
             Baileys Drink
           </span>
         </div>
