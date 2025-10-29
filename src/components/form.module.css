@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("/image/background.jpg");
+  background-image: url("/image/interactive-screen.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: left top;
@@ -136,11 +136,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url("/image/background.jpg");
+    background-image: url("/image/interactive-screen.jpg");
     background-repeat: no-repeat;
-    /* background-origin: border-box;
-    background-position: left top; */
-    /* background-size: 100%; */
+    background-size: contain;
+    background-position: left top;
+    background-origin: content-box;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,8 +192,10 @@
 /* Tablets (Portrait) - 600px to 768px */
 @media (max-width: 768px) and (min-width: 601px) {
   .login_container {
+    background-image: url("/image/768.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     justify-content: center;
   }
@@ -233,8 +235,10 @@
 /* Phones (Landscape) - 480px to 600px */
 @media (max-width: 600px) and (min-width: 481px) {
   .login_container {
+    background-image: url("/image/360.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     justify-content: center;
     padding: 2rem 0;
@@ -277,10 +281,10 @@
   }
 }
 
-/* Phones (Portrait) - 320px to 480px */
-@media (max-width: 480px) {
+/* Phones (Portrait) - 360px to 480px */
+@media (max-width: 480px) and (min-width: 361px) {
   .login_container {
-    background-image: url("/image/background.jpg");
+    background-image: url("/image/360.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -331,9 +335,46 @@
   }
 }
 
+/* Small Phones - 321px to 360px */
+@media (max-width: 360px) and (min-width: 321px) {
+  .login_container {
+    background-image: url("/image/320.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .details_whiskey {
+    padding: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .details_whiskey span {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+
+  .details_whiskey :first-child {
+    font-size: 2rem;
+    padding: 4px 10px;
+  }
+
+  .button {
+    padding: 1.2rem 2.5rem !important;
+    font-size: 22px;
+  }
+}
+
 /* Extra Small Phones - 320px and below */
 @media (max-width: 320px) {
   .login_container {
+    background-image: url("/image/320.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
     padding: 1.5rem 0;
   }
