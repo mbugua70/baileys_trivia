@@ -1918,7 +1918,7 @@ bottom: 190px;
   }
 
   #question h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0.6rem;
     margin: 0.3rem 0;
   }
@@ -1936,13 +1936,13 @@ bottom: 190px;
   }
 
   .answer button {
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     padding: 20px 12px;
     border-radius: 16px;
   }
 
   .name_letter {
-    font-size: 1.3rem;
+    font-size: 1.55rem;
     width: 45px;
     height: 45px;
     top: -10px;
