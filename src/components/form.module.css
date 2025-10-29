@@ -195,6 +195,7 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    justify-content: center;
   }
 
   .video_container {
@@ -205,6 +206,7 @@
   .details_whiskey {
     padding: 25px;
     width: 95%;
+    margin-bottom: 2rem;
   }
 
   .details_whiskey span {
@@ -213,7 +215,7 @@
   }
 
   .form {
-    margin-top: 20%;
+    margin-top: 0;
   }
 
   .button-style {
@@ -234,8 +236,8 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
   .video_container {
@@ -246,6 +248,7 @@
   .details_whiskey {
     padding: 20px;
     width: 95%;
+    margin-bottom: 1.5rem;
   }
 
   .details_whiskey span {
@@ -258,7 +261,7 @@
   }
 
   .form {
-    margin-top: 15%;
+    margin-top: 0;
     width: 95%;
   }
 
@@ -279,11 +282,11 @@
   .login_container {
     background-image: url("/image/background.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    justify-content: flex-start;
-    padding-top: 1.5rem;
+    justify-content: center;
+    padding: 2rem 0;
   }
 
   .video_container {
@@ -293,21 +296,24 @@
 
   .details_whiskey {
     padding: 15px;
-    width: 100%;
+    width: 95%;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
   .details_whiskey span {
-    font-size: 2.2rem;
-    line-height: 50px;
+    font-size: 2.5rem;
+    line-height: 55px;
+    display: inline-block;
   }
 
   .details_whiskey :first-child {
-    padding: 3px;
-    font-size: 2.2rem;
+    padding: 5px 12px;
+    font-size: 2.5rem;
   }
 
   .form {
-    margin-top: 10%;
+    margin-top: 0;
     width: 95%;
   }
 
@@ -317,9 +323,9 @@
 
   .button {
     width: 100%;
-    padding: 1.5rem 4rem !important;
-    font-size: 26px;
-    border-radius: 16px;
+    padding: 1.5rem 3rem !important;
+    font-size: 28px;
+    border-radius: 18px;
     position: relative;
     overflow: hidden;
   }
@@ -327,17 +333,29 @@
 
 /* Extra Small Phones - 320px and below */
 @media (max-width: 320px) {
+  .login_container {
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .details_whiskey {
+    padding: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   .details_whiskey span {
-    font-size: 1.8rem;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 45px;
   }
 
   .details_whiskey :first-child {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding: 4px 10px;
   }
 
   .button {
-    padding: 1.2rem 3rem !important;
-    font-size: 20px;
+    padding: 1.2rem 2.5rem !important;
+    font-size: 22px;
   }
 }
