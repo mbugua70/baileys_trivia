@@ -121,7 +121,7 @@ const LoginPage = () => {
             Find Your
           </span>
           <span className='animate__animated  animate__fadeInRight'>
-            Tequila
+            Baileys Drink
           </span>
         </div>
 
