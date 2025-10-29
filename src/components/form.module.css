@@ -1,0 +1,138 @@
+:root {
+  --main-color: #0a0a0a;
+  --secondary-color: #ababa3;
+  --tertiary-color: #656969;
+  --secondary-two-color: #e2e3e6;
+  --color-one: #5a4637;
+  --light--primary: #f8ce52;
+  --lighter-primary: #f8db81;
+  --brown-primary: #721f2e;
+  --blue-main: #44bfba;
+}
+
+.login_container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("/image/background.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: left top;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video_container {
+  margin-inline: auto !important;
+  width: 90%;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.details_whiskey{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+
+.details_whiskey span{
+    display: block;
+    margin-block: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 140px;
+    text-align: start;
+    color: #fff;
+}
+
+.details_whiskey :first-child{
+   background-color: var(--blue-main);
+   width: fit-content;
+   padding: 6px;
+   color: #fff;
+}
+
+.form {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  margin-top: 30%;
+  justify-content: center !important;
+  margin-inline: auto !important;
+  align-items: center;
+}
+
+.button-style {
+  width: 75%;
+  padding-inline: 0px !important;
+  margin-inline: 0px !important;
+  box-sizing: border-box;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--blue-main);
+  color: #fff !important;
+  text-transform: uppercase;
+  margin-block: 3rem !important;
+  padding: 8rem 12rem !important;
+  box-sizing: border-box;
+  font-size: 100px;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 24px;
+}
+
+@media ((min-width: 1080px) and (min-height: 1920px)){
+  .login_container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/image/background.jpg");
+    background-repeat: no-repeat;
+    /* background-origin: border-box;
+    background-position: left top; */
+    /* background-size: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* small interactive screen */
+@media ((max-width: 1080px) and (max-height: 1920px)) {
+  .button {
+    padding: 2.5rem 12rem !important;
+    font-size: 42px !important;
+    border-radius: 8px;
+  }
+}
+
+@media ((max-width: 996px) and (max-height: 1920px)) {
+  .button {
+    width: 90%;
+    padding: 20px 8px !important;
+    font-size: 32px !important;
+  }
+}
+
+@media ((max-width: 600px) and (max-height: 1920px)) {
+  .button {
+    font-size: 28px !important;
+  }
+}
