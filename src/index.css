@@ -1383,8 +1383,194 @@ bottom: 190px;
   transform: translateX(5px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* ============================================ */
+/* RESPONSIVE STYLES FOR TABLETS & PHONES */
+/* ============================================ */
+
+/* Tablets (Landscape) - 768px to 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Registration Page */
+  .details_whiskey span {
+    font-size: 5rem !important;
+    line-height: 100px !important;
+  }
+
+  /* Quiz Questions */
+  #question {
+    padding-top: 10rem;
+  }
+
+  .question_main {
+    width: 85%;
+    height: 15rem;
+  }
+
+  .question_number {
+    font-size: 1.3rem;
+  }
+
+  #question h2 {
+    font-size: 2rem;
+  }
+
+  /* Answer Buttons */
+  .answer {
+    width: 45%;
+    height: 280px;
+  }
+
+  .answer button {
+    font-size: 1.5rem;
+    padding: 60px;
+  }
+
+  .name_letter {
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Continue Button */
+  .secondary_button {
+    padding: 2rem 8rem !important;
+    font-size: 32px;
+  }
+
+  /* Scoreboard */
+  .image_containers {
+    margin: 40px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .scoreboard p {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets (Portrait) & Large Phones - 600px to 768px */
+@media (max-width: 768px) and (min-width: 601px) {
+  html {
+    overflow-y: auto;
+  }
+
+  body {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Registration Page */
+  .details_whiskey {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .details_whiskey span {
+    font-size: 3.5rem !important;
+    line-height: 80px !important;
+  }
+
+  /* Quiz Container */
+  #quiz {
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  /* Quiz Questions */
+  #question {
+    height: auto;
+    padding-top: 8rem;
+  }
+
+  .question_main {
+    width: 90%;
+    height: auto;
+    min-height: 12rem;
+    margin: 1.5rem auto 2rem auto;
+    padding: 1rem;
+  }
+
+  .question_number {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #question h2 {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  /* Answer Buttons */
+  #answers {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .answer {
+    width: 100%;
+    height: 200px;
+  }
+
+  .answer button {
+    font-size: 1.3rem;
+    padding: 40px 20px;
+  }
+
+  .name_letter {
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    top: -15px;
+    left: -15px;
+  }
+
+  .correctPic,
+  .wrongPic {
+    width: 35%;
+    height: 35%;
+    top: 38%;
+    left: 32%;
+  }
+
+  /* Continue Button */
+  .next_button {
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .secondary_button {
+    padding: 1.5rem 6rem !important;
+    font-size: 28px;
+  }
+
+  .secondary_button i {
+    font-size: 3rem;
+  }
+
+  /* Scoreboard */
+  .header_question {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .scoreboard {
+    padding: 0 1rem;
+  }
+
+  .image_containers {
+    margin: 30px 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .scoreboard p {
+    font-size: 1.8rem;
+  }
+
+  /* Baileys Summary */
   .baileys-summary-wrapper {
     padding: 1rem;
   }
@@ -1452,6 +1638,546 @@ bottom: 190px;
     right: 10px;
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
+  }
+}
+
+/* Phones (Landscape) - 480px to 600px */
+@media (max-width: 600px) and (min-width: 481px) {
+  html, body {
+    overflow-y: auto;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Registration Page */
+  .details_whiskey {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .details_whiskey span {
+    font-size: 2.8rem !important;
+    line-height: 60px !important;
+  }
+
+  /* Quiz Container */
+  #quiz {
+    height: auto;
+    min-height: 100vh;
+    padding: 0.5rem;
+  }
+
+  /* Quiz Questions */
+  #question {
+    height: auto;
+    padding-top: 6rem;
+  }
+
+  .question_main {
+    width: 95%;
+    height: auto;
+    min-height: 10rem;
+    margin: 1rem auto 1.5rem auto;
+    padding: 0.8rem;
+  }
+
+  .question_number {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    height: auto;
+  }
+
+  #question h2 {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  /* Answer Buttons */
+  #answers {
+    flex-direction: column;
+    row-gap: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
+  .answer {
+    width: 100%;
+    height: 160px;
+  }
+
+  .answer button {
+    font-size: 1.1rem;
+    padding: 30px 15px;
+    border-radius: 20px;
+  }
+
+  .name_letter {
+    font-size: 1.6rem;
+    width: 55px;
+    height: 55px;
+    top: -12px;
+    left: -12px;
+    border: 2px solid var(--color-one);
+  }
+
+  .correctPic,
+  .wrongPic {
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    left: 35%;
+  }
+
+  /* Continue Button */
+  .next_button {
+    margin-top: 20px;
+    width: 95%;
+  }
+
+  .secondary_button {
+    padding: 1.2rem 4rem !important;
+    font-size: 22px;
+  }
+
+  .secondary_button i {
+    font-size: 2.5rem;
+  }
+
+  /* Scoreboard */
+  .header_question {
+    height: auto;
+    padding: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .scoreboard {
+    padding: 0 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image_containers {
+    margin: 20px 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .scoreboard p {
+    font-size: 1.5rem;
+  }
+
+  /* Baileys Summary */
+  .baileys-summary-wrapper {
+    padding: 0.8rem;
+  }
+
+  .header-ornament {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .main-title {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    margin: 1rem auto;
+  }
+
+  .main-icon {
+    font-size: 2.5rem;
+  }
+
+  .baileys-result-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .persona-title {
+    font-size: 1.6rem;
+  }
+
+  .location-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .reward-box {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+
+  .reward-icon {
+    font-size: 2.5rem;
+  }
+
+  .reward-label {
+    font-size: 0.85rem;
+  }
+
+  .reward-text {
+    font-size: 1rem;
+  }
+
+  .summary-stats {
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-text {
+    font-size: 0.8rem;
+  }
+
+  .baileys-restart-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-arrow {
+    font-size: 1.2rem;
+  }
+
+  .match-badge {
+    top: -35px;
+    right: 8px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .badge-category {
+    font-size: 1.1rem;
+  }
+
+  .card-ornament {
+    font-size: 1.2rem;
+  }
+}
+
+/* Phones (Portrait) - 320px to 480px */
+@media (max-width: 480px) {
+  html, body {
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Registration Page */
+  .details_whiskey {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .details_whiskey span {
+    font-size: 2rem !important;
+    line-height: 45px !important;
+  }
+
+  /* Quiz Container */
+  #quiz {
+    height: auto;
+    min-height: 100vh;
+    padding: 0.5rem;
+  }
+
+  /* Quiz Questions */
+  #question {
+    height: auto;
+    padding-top: 5rem;
+  }
+
+  .question_main {
+    width: 95%;
+    height: auto;
+    min-height: 8rem;
+    margin: 0.8rem auto 1rem auto;
+    padding: 0.6rem;
+    border-radius: 20px;
+  }
+
+  .question_number {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    height: auto;
+  }
+
+  #question h2 {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    margin: 0.3rem 0;
+  }
+
+  /* Answer Buttons */
+  #answers {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .answer {
+    width: 100%;
+    height: 130px;
+  }
+
+  .answer button {
+    font-size: 0.95rem;
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+
+  .name_letter {
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+    top: -10px;
+    left: -10px;
+    border: 2px solid var(--color-one);
+  }
+
+  .correctPic,
+  .wrongPic {
+    width: 25%;
+    height: 25%;
+    top: 38%;
+    left: 38%;
+  }
+
+  /* Continue Button */
+  .next_button {
+    margin-top: 15px;
+    width: 95%;
+  }
+
+  .secondary_button {
+    padding: 1rem 3rem !important;
+    font-size: 18px;
+    border-radius: 16px;
+  }
+
+  .secondary_button i {
+    font-size: 2rem;
+  }
+
+  /* Scoreboard */
+  .header_question {
+    height: auto;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .scoreboard {
+    padding: 0 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image_containers {
+    margin: 15px 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .scoreboard p {
+    font-size: 1.2rem;
+  }
+
+  /* Baileys Summary */
+  .baileys-summary-wrapper {
+    padding: 0.5rem;
+  }
+
+  .baileys-summary-container {
+    gap: 1.5rem;
+  }
+
+  .header-ornament {
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    margin: 0.5rem 0;
+  }
+
+  .main-title {
+    font-size: 1.3rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    margin: 0.8rem auto;
+    border: 2px solid var(--baileys-gold);
+  }
+
+  .main-icon {
+    font-size: 2rem;
+  }
+
+  .baileys-result-card {
+    padding: 1.2rem 0.8rem;
+    border-radius: 16px;
+  }
+
+  .persona-title {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .divider-line {
+    width: 60px;
+    margin: 1rem auto;
+  }
+
+  .location-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .description-section {
+    margin: 1.5rem 0;
+  }
+
+  .description-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.8rem 0;
+  }
+
+  .reward-box {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+  }
+
+  .reward-icon {
+    font-size: 2rem;
+  }
+
+  .reward-label {
+    font-size: 0.75rem;
+  }
+
+  .reward-text {
+    font-size: 0.9rem;
+  }
+
+  .summary-stats {
+    gap: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-text {
+    font-size: 0.7rem;
+  }
+
+  .stats-divider {
+    font-size: 1.5rem;
+  }
+
+  .baileys-restart-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .btn-arrow {
+    font-size: 1rem;
+  }
+
+  .match-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto 1rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .badge-text {
+    font-size: 0.75rem;
+  }
+
+  .badge-category {
+    font-size: 1rem;
+  }
+
+  .card-ornament {
+    font-size: 1rem;
+  }
+
+  .floater {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Small Phones - 320px and below */
+@media (max-width: 320px) {
+  .details_whiskey span {
+    font-size: 1.6rem !important;
+    line-height: 35px !important;
+  }
+
+  #question h2 {
+    font-size: 1rem;
+  }
+
+  .answer {
+    height: 110px;
+  }
+
+  .answer button {
+    font-size: 0.85rem;
+    padding: 15px 10px;
+  }
+
+  .name_letter {
+    font-size: 1.1rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .secondary_button {
+    padding: 0.8rem 2rem !important;
+    font-size: 16px;
+  }
+
+  .main-title {
+    font-size: 1.1rem;
+  }
+
+  .persona-title {
+    font-size: 1.1rem;
+  }
+
+  .location-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .description-text {
+    font-size: 0.85rem;
   }
 }
 

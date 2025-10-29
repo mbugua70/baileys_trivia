@@ -170,3 +170,174 @@
     font-size: 28px !important;
   }
 }
+
+/* ============================================ */
+/* RESPONSIVE STYLES FOR TABLETS & PHONES */
+/* ============================================ */
+
+/* Tablets (Landscape) - 768px to 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .details_whiskey span {
+    font-size: 5.5rem;
+    line-height: 110px;
+  }
+
+  .button {
+    width: 85%;
+    padding: 3.5rem 10rem !important;
+    font-size: 60px;
+  }
+}
+
+/* Tablets (Portrait) - 600px to 768px */
+@media (max-width: 768px) and (min-width: 601px) {
+  .login_container {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .video_container {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+
+  .details_whiskey {
+    padding: 25px;
+    width: 95%;
+  }
+
+  .details_whiskey span {
+    font-size: 4rem;
+    line-height: 85px;
+  }
+
+  .form {
+    margin-top: 20%;
+  }
+
+  .button-style {
+    width: 85%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 2.5rem 8rem !important;
+    font-size: 48px;
+    border-radius: 20px;
+  }
+}
+
+/* Phones (Landscape) - 480px to 600px */
+@media (max-width: 600px) and (min-width: 481px) {
+  .login_container {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+
+  .video_container {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .details_whiskey {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .details_whiskey span {
+    font-size: 3rem;
+    line-height: 65px;
+  }
+
+  .details_whiskey :first-child {
+    padding: 4px;
+  }
+
+  .form {
+    margin-top: 15%;
+    width: 95%;
+  }
+
+  .button-style {
+    width: 90%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 2rem 6rem !important;
+    font-size: 36px;
+    border-radius: 18px;
+  }
+}
+
+/* Phones (Portrait) - 320px to 480px */
+@media (max-width: 480px) {
+  .login_container {
+    background-image: url("/image/background.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+  }
+
+  .video_container {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .details_whiskey {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .details_whiskey span {
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+
+  .details_whiskey :first-child {
+    padding: 3px;
+    font-size: 2.2rem;
+  }
+
+  .form {
+    margin-top: 10%;
+    width: 95%;
+  }
+
+  .button-style {
+    width: 90%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 1.5rem 4rem !important;
+    font-size: 26px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* Extra Small Phones - 320px and below */
+@media (max-width: 320px) {
+  .details_whiskey span {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+
+  .details_whiskey :first-child {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    padding: 1.2rem 3rem !important;
+    font-size: 20px;
+  }
+}
