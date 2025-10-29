@@ -2,7 +2,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useNavigate } from "react-router-dom";
 import Styles from "./form.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Form, redirect, useNavigation, useLoaderData } from "react-router-dom";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import { loginUser } from "./api";
@@ -87,14 +87,21 @@ export const loginLoader = ({ request }) => {
 
 const LoginPage = () => {
   // code for logging status with useNavigation hook
+  const [applyClass, setApplyClass] = useState(false);
   const navigate = useNavigate();
   const navigation = useNavigation();
   const loginMssgError = useLoaderData();
   // const errorMessage = useActionData();
 
   function handleStart() {
-    navigate("/trivia")
+    navigate("/trivia");
   }
+
+  // Heartbeat animation toggle
+  useEffect(() => {
+    const interval = setInterval(() => setApplyClass((p) => !p), 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     if (loginMssgError) {
@@ -110,15 +117,21 @@ const LoginPage = () => {
     <>
       <div className={Styles.login_container}>
         <div className={Styles.details_whiskey}>
-          <span className="animate__animated  animate__fadeInLeftBig">Find Your</span>
-          <span className="animate__animated  animate__fadeInRight">Tequila</span>
+          <span className='animate__animated  animate__fadeInLeftBig'>
+            Find Your
+          </span>
+          <span className='animate__animated  animate__fadeInRight'>
+            Tequila
+          </span>
         </div>
 
         {/* below instead of using the form we wil use Form from the react router */}
         <div className='row input-field  button-style'>
           <button
             onClick={handleStart}
-            className={Styles.button}
+            className={`${Styles.button} animate__animated ${
+              applyClass ? "animate__pulse" : ""
+            }`}
             disabled={navigation.state === "submitting"}>
             {navigation.state === "submitting"
               ? "registering..."
